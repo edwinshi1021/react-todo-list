@@ -1,0 +1,33 @@
+.add-todo {
+  width: 100%;
+  margin-top: 20px;
+
+  .add-todo-form {
+    display: flex;
+    justify-content: center;
+  }
+  .add-todo-input {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .add-todo-input:focus {
+    outline: none;
+  }
+  .add-todo-btn {
+    height: 40px;
+    border: none;
+    padding: 10px 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #794c74;
+    color: #b2deec;
+  }
+  .add-todo-btn:focus {
+    outline: none;
+  }
+}
