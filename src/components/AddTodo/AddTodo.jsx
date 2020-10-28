@@ -18,6 +18,7 @@ export default class AddTodo extends Component {
     e.preventDefault();
     const { addNewTodo } = this.props;
     addNewTodo(this.state.title);
+    this.setState({ ...this.state, title: "" });
   };
 
   render() {
@@ -28,6 +29,7 @@ export default class AddTodo extends Component {
             className="add-todo-input"
             type="text"
             name="todo"
+            value={this.state.title}
             onChange={this.handleOnChange}
           />
           <button type="submit" className="add-todo-btn">
